@@ -29,8 +29,8 @@ class VersionDisplayViewController: NSViewController {
 
 extension VersionDisplayViewController {
     static func freshController() -> VersionDisplayViewController {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-        let identifier = NSStoryboard.SceneIdentifier("VersionDisplayViewController")
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let identifier = "VersionDisplayViewController"
         guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? VersionDisplayViewController else {
             fatalError("Failed to find view controller - Check Main.storyboard")
         }
