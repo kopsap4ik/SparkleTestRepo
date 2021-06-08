@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,11 @@
 		5BE4C107234AB1750044DA59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4C105234AB1750044DA59 /* Main.storyboard */; };
 		5BE4C110234AB3AC0044DA59 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4C10F234AB3AC0044DA59 /* EventMonitor.swift */; };
 		5BE4C112234AB43E0044DA59 /* VersionDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4C111234AB43D0044DA59 /* VersionDisplayViewController.swift */; };
+		791DA0967EECCE5D0CD8D613 /* Pods_SparkleSetupGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8599D2A489F2E0C3A77B7E /* Pods_SparkleSetupGuide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8599D2A489F2E0C3A77B7E /* Pods_SparkleSetupGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkleSetupGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE4C0FC234AB1730044DA59 /* SparkleSetupGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkleSetupGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE4C0FF234AB1730044DA59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE4C103234AB1750044DA59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +25,8 @@
 		5BE4C109234AB1750044DA59 /* SparkleSetupGuide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SparkleSetupGuide.entitlements; sourceTree = "<group>"; };
 		5BE4C10F234AB3AC0044DA59 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		5BE4C111234AB43D0044DA59 /* VersionDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionDisplayViewController.swift; sourceTree = "<group>"; };
+		978B9982E9C1980D2FC6A416 /* Pods-SparkleSetupGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkleSetupGuide.release.xcconfig"; path = "Target Support Files/Pods-SparkleSetupGuide/Pods-SparkleSetupGuide.release.xcconfig"; sourceTree = "<group>"; };
+		B29CCCDBAD977A4151293F33 /* Pods-SparkleSetupGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkleSetupGuide.debug.xcconfig"; path = "Target Support Files/Pods-SparkleSetupGuide/Pods-SparkleSetupGuide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791DA0967EECCE5D0CD8D613 /* Pods_SparkleSetupGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BAE7A124A2F0008465D8583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B29CCCDBAD977A4151293F33 /* Pods-SparkleSetupGuide.debug.xcconfig */,
+				978B9982E9C1980D2FC6A416 /* Pods-SparkleSetupGuide.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BE4C0F3234AB1730044DA59 = {
 			isa = PBXGroup;
 			children = (
 				5BE4C0FE234AB1730044DA59 /* SparkleSetupGuide */,
 				5BE4C0FD234AB1730044DA59 /* Products */,
+				3BAE7A124A2F0008465D8583 /* Pods */,
+				C8E9F7B1ED48D65E9D5A9364 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +82,14 @@
 			path = SparkleSetupGuide;
 			sourceTree = "<group>";
 		};
+		C8E9F7B1ED48D65E9D5A9364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E8599D2A489F2E0C3A77B7E /* Pods_SparkleSetupGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE4C10C234AB1750044DA59 /* Build configuration list for PBXNativeTarget "SparkleSetupGuide" */;
 			buildPhases = (
+				7167B9B3804AD13B6481B2AA /* [CP] Check Pods Manifest.lock */,
 				5BE4C0F8234AB1730044DA59 /* Sources */,
 				5BE4C0F9234AB1730044DA59 /* Frameworks */,
 				5BE4C0FA234AB1730044DA59 /* Resources */,
+				26A1A445823350E016E5FACE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26A1A445823350E016E5FACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkleSetupGuide/Pods-SparkleSetupGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkleSetupGuide/Pods-SparkleSetupGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparkleSetupGuide/Pods-SparkleSetupGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7167B9B3804AD13B6481B2AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkleSetupGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BE4C0F8234AB1730044DA59 /* Sources */ = {
@@ -276,10 +344,11 @@
 		};
 		5BE4C10D234AB1750044DA59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29CCCDBAD977A4151293F33 /* Pods-SparkleSetupGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SparkleSetupGuide/SparkleSetupGuide.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 55MCT9R6B9;
@@ -290,7 +359,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTestRepo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VasPet.SparkleTestRepo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -298,10 +367,11 @@
 		};
 		5BE4C10E234AB1750044DA59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978B9982E9C1980D2FC6A416 /* Pods-SparkleSetupGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SparkleSetupGuide/SparkleSetupGuide.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 55MCT9R6B9;
@@ -312,7 +382,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTestRepo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VasPet.SparkleTestRepo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
