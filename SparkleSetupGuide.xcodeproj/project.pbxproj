@@ -278,7 +278,7 @@
 				CODE_SIGN_ENTITLEMENTS = SparkleSetupGuide/SparkleSetupGuide.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UR3BF9X9CJ;
+				DEVELOPMENT_TEAM = 55MCT9R6B9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SparkleSetupGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -286,7 +286,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Prashant.Nigam.SparkleSetupGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTestRepo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -299,7 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = SparkleSetupGuide/SparkleSetupGuide.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UR3BF9X9CJ;
+				DEVELOPMENT_TEAM = 55MCT9R6B9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SparkleSetupGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +307,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Prashant.Nigam.SparkleSetupGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SparkleTestRepo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
